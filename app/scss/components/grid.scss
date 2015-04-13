@@ -1,0 +1,23 @@
+.row {
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.row > div:first-child { margin-left: -15px; }
+.row > div:last-child { margin-right: -15px; }
+
+[class^="col-"] {
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  &.no-space {
+    padding: 0;
+  }
+}
+
+@for $i from 1 through $total-columns {
+  .col-#{$i} {
+    width: 100% / $total-columns*$i;
+  }
+}

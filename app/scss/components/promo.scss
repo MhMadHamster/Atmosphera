@@ -1,0 +1,29 @@
+.promo {
+    background-color: $lightblue;
+    padding-top: 20px;
+}
+
+.promo-block {
+    width: 100%;
+    position: relative;
+    height: 252px;
+
+    .promo-text {
+        position: absolute;
+        font-size: 70px;
+        color: #000;
+        font-weight: bold;
+        top: 0;
+        left: 25px;
+        margin: 0;
+
+        & > span {
+            text-transform: uppercase;
+        }
+    }
+
+    .promo-image {
+        width: 100%;
+        height: 100%;
+    }
+}

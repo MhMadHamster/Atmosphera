@@ -1,0 +1,20 @@
+.page-content {
+    background-color: $lightblue;
+    padding: 10px 0;
+
+    &__side {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 25%;
+        padding-right: 15px;
+        vertical-align: top;
+    }
+
+    &__main {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 75%;
+        padding-left: 15px;
+        vertical-align: top;
+    }
+}

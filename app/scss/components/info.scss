@@ -1,0 +1,23 @@
+.info {
+    width: 100%;
+
+    &-text {
+        font-size: 15px;
+        color: #000;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 20px 0;
+
+        &:first-of-type { margin-top: 0; }
+
+        & > a {
+            text-decoration: underline;
+        }
+    }
+
+    &-img {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        margin-top: 8px;
+    }
+}

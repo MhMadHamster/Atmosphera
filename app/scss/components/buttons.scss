@@ -1,0 +1,18 @@
+.btn {
+    font-size: 16px;
+    color: $white;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 11px 15px;
+    display: inline-block;
+
+    &--blue {
+        background-color: $blue;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #2771b8;
+        }
+    }
+}
