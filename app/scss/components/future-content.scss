@@ -10,6 +10,7 @@
         box-sizing: border-box;
         padding: 0 10px;
         margin: 0 0 20px 0;
+        vertical-align: top;
 
         &:nth-child(3n) {
             padding-right: 0;
@@ -39,6 +40,7 @@
         &-inner {
             margin-top: 20px;
             width: 100%;
+            vertical-align: top;
         }
 
         &-person {

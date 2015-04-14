@@ -104,6 +104,17 @@ $(document).ready(function() {
 
 
     $(window).load(function() {
+        equalheight('.future-content__item > future-content__item-inner > .future-content__item-person');
+
+        setTimeout(function() {
+            $(window).resize(function(){
+                equalheight('.future-content__item > future-content__item-inner > .future-content__item-person');
+            });
+        }, 0);
+    });
+
+
+    $(window).load(function() {
         equalheight('.news-content .news-content__item');
 
         setTimeout(function() {

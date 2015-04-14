@@ -64,6 +64,7 @@
             margin: 10px 14px;
             font-size: 16px;
             color: $orange;
+            display: block;
         }
 
         .text {
@@ -72,6 +73,7 @@
             color: #000;
             font-weight: 300;
             margin: 10px 14px;
+            display: block;
         }
 
         &:nth-child(1),
