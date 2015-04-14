@@ -1,4 +1,4 @@
-.table {
+.table2 {
     border: 0;
     outline: 0;
     border-spacing: 0;
@@ -29,5 +29,27 @@
             padding: 9px;
             padding-left: 40px;
         }
+    }
+}
+
+.table1,
+.table0 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+
+    & td {
+        padding: 9px;
+        padding-left: 40px;
+    }
+}
+
+.table1 {
+    border: 1px solid #000;
+    border-collapse: collapse;
+
+    td {
+        border: 1px solid #000;
     }
 }

@@ -17,6 +17,7 @@
             color: $white;
             text-decoration: underline;
             font-weight: 300;
+            transition: all .3s;
 
             &:hover {
                 text-decoration: none;
