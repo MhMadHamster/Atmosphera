@@ -70,6 +70,37 @@
                         <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="">Контакты</a>
+
+                            <!-- [+] .sub-menu -->
+                            <ul class="sub-menu">
+
+                                <!-- [+] .sub-menu__item -->
+                                <li class="sub-menu__item"> <a href="">О компании - чем занимается, кто руководитель</a> </li>
+                                <!-- [-] .sub-menu__item -->
+
+                                <!-- [+] .sub-menu__item -->
+                                <li class="sub-menu__item"> <a href="">Планы компании на ближайший год</a> </li>
+                                <!-- [-] .sub-menu__item -->
+
+                                <!-- [+] .sub-menu__item -->
+                                <li class="sub-menu__item"> <a href="">История компании</a> </li>
+                                <!-- [-] .sub-menu__item -->
+
+                                <!-- [+] .sub-menu__item -->
+                                <li class="sub-menu__item"> <a href="">АТМ</a> </li>
+                                <!-- [-] .sub-menu__item -->
+
+                                <!-- [+] .sub-menu__item -->
+                                <li class="sub-menu__item"> <a href="">Основные даты в истории</a> </li>
+                                <!-- [-] .sub-menu__item -->
+
+                                <!-- [+] .sub-menu__item -->
+                                <li class="sub-menu__item"> <a href="">Фотографии завода, офиса</a> </li>
+                                <!-- [-] .sub-menu__item -->
+
+                            </ul>
+                            <!-- [-] .sub-menu -->
+
                         </li>
                         <!-- [-] .top-menu__item -->
 
@@ -105,7 +136,7 @@
 
                         <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
-                            <a href="">Библиотека</a>
+                            <a href="" class="js-popup">Библиотека</a>
                         </li>
                         <!-- [-] .top-menu__item -->
 
@@ -147,7 +178,7 @@
 
 
         <!-- [+] .page-content -->
-        <main class="page-content">
+        <div class="page-content">
 
 
             <!-- [+] .container -->
@@ -302,6 +333,41 @@
 
                     <h4 class="h4">Таблица</h4>
 
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <td>Head 1</td>
+                                <td>Head 2</td>
+                                <td>Head 3</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                            <tr>
+                                <td>Cell 1</td>
+                                <td>Cell 2</td>
+                                <td>Cell 3</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
 
                 </div>
                 <!-- [-] .page-content__main -->
@@ -311,7 +377,7 @@
             <!-- [-] .container -->
 
 
-        </main>
+        </div>
         <!-- [-] .page-content -->
 
 
@@ -326,23 +392,23 @@
                 <ul class="footer-menu">
 
                     <!-- [+] .footer-menu__item -->
-                    <li class="footer-menu__item"><a href="">Lorem.</a></li>
+                    <li class="footer-menu__item"> <a href="">Отдых</a> </li>
                     <!-- [-] .footer-menu__item -->
 
                     <!-- [+] .footer-menu__item -->
-                    <li class="footer-menu__item"><a href="">Aut.</a></li>
+                    <li class="footer-menu__item"> <a href="">кино</a> </li>
                     <!-- [-] .footer-menu__item -->
 
                     <!-- [+] .footer-menu__item -->
-                    <li class="footer-menu__item"><a href="">Tempore.</a></li>
+                    <li class="footer-menu__item"> <a href="">театр</a> </li>
                     <!-- [-] .footer-menu__item -->
 
                     <!-- [+] .footer-menu__item -->
-                    <li class="footer-menu__item"><a href="">Quis!</a></li>
+                    <li class="footer-menu__item"> <a href="">музеи</a> </li>
                     <!-- [-] .footer-menu__item -->
 
                     <!-- [+] .footer-menu__item -->
-                    <li class="footer-menu__item"><a href="">Fugit.</a></li>
+                    <li class="footer-menu__item" ><a href="">спорт</a> </li>
                     <!-- [-] .footer-menu__item -->
 
                 </ul>
@@ -363,28 +429,21 @@
             <!-- [+] .container -->
             <div class="container">
 
-                <!-- [+] .row -->
-                <div class="row">
 
-                    <!-- [+] .col-6 -->
-                    <div class="col-6">
-                        <div class="stat"> <img src="img/top100rambler.png" height="31" width="180" alt=""> </div>
+                <!-- [+] .footer-inner -->
+                <div class="footer-inner">
+
+                    <div class="stat to-left"> <img src="img/top100rambler.png" height="31" width="180" alt=""> </div>
+
+
+                    <div class="contacts to-right">
+                        <span class="sup-phone-text">вопросы и предложения по порталу</span>
+                        <p class="phone-number">(812) 000-00-00</p>
                     </div>
-                    <!-- [-] .col-6 -->
 
-                    <!-- [+] .col-6 -->
-                    <div class="col-6">
-
-                        <div class="contacts">
-                            <span class="sup-phone-text">вопросы и предложения по порталу</span>
-                            <p class="phone-number">(812) 000-00-00</p>
-                        </div>
-
-                    </div>
-                    <!-- [-] .col-6 -->
 
                 </div>
-                <!-- [-] .row -->
+                <!-- [-] .footer-inner -->
 
             </div>
             <!-- [-] .container -->
@@ -396,6 +455,22 @@
 
     </div>
     <!-- [-] .page-wrapper page-styles -->
+
+
+    <!-- [+] .popup -->
+    <div class="popup">
+    
+        <span class="popup-text">Popup</span>
+    
+    </div>
+    <!-- [-] .popup -->
+
+
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.bpopup.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
 
     
 </body>

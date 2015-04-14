@@ -1,0 +1,54 @@
+.side-list-wrapper {
+    background-color: $white;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 3px 0;
+    width: 100%;
+}
+
+.side-list-header {
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #000;
+}
+
+.side-list {
+    display: block;
+    list-style: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 7px 0;
+    padding: 0;
+    padding-left: 17px;
+
+    &__item {
+        display: block;
+        box-sizing: border-box;
+        padding-left: 15px;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: $blue;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+        }
+
+        & > a {
+            text-decoration: underline;
+            font-size: 13px;
+            line-height: 24px;
+            color: $blue;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.table {
+    border: 0;
+    outline: 0;
+    border-spacing: 0;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+
+    & > thead {
+        background-color: $orange;
+        color: $white;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    & > tbody {
+        color: #000;
+        font-weight: 300;
+        font-size: 16px;
+
+        & > tr:nth-child(2n) {
+            background-color: #e6f2fd;
+        }
+    }
+
+    & tr {
+
+        & > td {
+            padding: 9px;
+            padding-left: 40px;
+        }
+    }
+}

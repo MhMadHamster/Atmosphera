@@ -1,0 +1,32 @@
+.footer {
+    background-color: $orange;
+}
+
+.footer-inner {
+    width: 100%;
+    @extend clearfix;
+}
+
+.stat {
+    opacity: .8;
+    margin-top: 33px;
+}
+
+.contacts {
+    color: $white;
+    margin: 23px 0;
+
+    .sup-phone-text {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300;
+    }
+
+    .phone-number {
+        font-size: 34px;
+        line-height: 32px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+}

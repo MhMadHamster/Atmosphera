@@ -15,10 +15,10 @@
     &__item {
         display: inline-block;
         margin: 0 2px;
-        // position: relative;
+        position: relative;
 
         &:first-child {
-            margin-left: -15px;
+            margin-left: -12px;
         }
 
         &:last-child {
@@ -33,6 +33,10 @@
             display: inline-block;
             vertical-align: middle;
 
+            &.active {
+                background-color: $blue;
+            }
+
             &:hover {
                 background-color: $blue;
             }
@@ -44,13 +48,14 @@
     display: none;
     position: absolute;
     margin: 0;
-    top: 57px;
+    top: 0;
     left: 0;
     list-style: none;
     background-color: $blue;
     padding: 18px;
     box-sizing: border-box;
     width: 165px;
+    z-index: 100;
 
     &__item {
         padding: 10px 0;

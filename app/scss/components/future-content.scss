@@ -1,0 +1,83 @@
+.future-content {
+    width: 100%;
+    margin: 20px 0 10px;
+    font-size: 0;
+    display: table;
+
+    &__item {
+        display: inline-block;
+        width: 33.33%;
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin: 0 0 20px 0;
+
+        &:nth-child(3n) {
+            padding-right: 0;
+            padding-left: 20px;
+        }
+        &:nth-child(3n+1) {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+
+        &-date {
+            box-sizing: border-box;
+            width: 100%;
+            border-left: 12px solid $orange;
+            background-color: $blue;
+            padding: 5px 15px;
+            margin-bottom: 20px;
+
+            & > span {
+                font-size: 16px;
+                line-height: 20px;
+                color: $white;
+                font-weight: 300;
+            }
+        }
+
+        &-inner {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        &-person {
+            width: 100%;
+            background-color: $white;
+            margin: 13px 0;
+            overflow: hidden;
+
+            &:first-child { margin-top: 0; }
+            &:last-child { margin-bottom: 0; }
+
+            & > .img-wrapper {
+                vertical-align: top;
+                display: inline-block;
+                max-width: 70px;
+                max-height: 70px;
+                overflow: hidden;
+                position: relative;
+
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            & > .person-name {
+                margin: 0;
+                padding: 13px;
+                overflow: hidden;
+                vertical-align: top;
+                font-size: 13px;
+                line-height: 20px;
+                font-weight: 300;
+                color: #000;
+                display: inline-block;
+                box-sizing: border-box;
+                max-width: 145px;
+                text-overflow: clip;
+            }
+        }
+    }
+}

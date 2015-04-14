@@ -1,6 +1,13 @@
+.page-content-wrapper {
+    background-color: $lightblue;
+}
+
 .page-content {
     background-color: $lightblue;
     padding: 10px 0;
+    width: 100%;
+    font-size: 0;
+    display: table;
 
     &__side {
         box-sizing: border-box;
@@ -8,6 +15,16 @@
         width: 25%;
         padding-right: 15px;
         vertical-align: top;
+
+        &:first-child {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            padding-left: 15px;
+        }
     }
 
     &__main {
@@ -16,5 +33,20 @@
         width: 75%;
         padding-left: 15px;
         vertical-align: top;
+        margin-bottom: 30px;
+
+        &:first-child {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+            padding-left: 15px;
+        }
     }
+}
+
+.page-index .page-content__main {
+    margin-bottom: 0;
 }
