@@ -2,3 +2,5 @@ node_modules
 psd
 bower_components
 dist
+*.7z
+*.rar
