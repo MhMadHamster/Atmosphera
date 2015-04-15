@@ -389,14 +389,15 @@ a:active, a:focus, div:active, div:focus, button:active, button:focus, input:act
   font-weight: 300; }
 
 label {
-  display: block;
+  display: inline-block;
   box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 15px;
   font-size: 15px;
   font-weight: 300;
   margin: 15px 0;
-  margin-left: 15px;
-  position: relative; }
+  position: relative;
+  vertical-align: middle;
+  max-width: 93%; }
   label:first-of-type {
     margin-top: 0; }
   label:last-of-type {
@@ -404,62 +405,46 @@ label {
   label:hover {
     cursor: pointer; }
 
-input[type="checkbox"], input[type="radio"] {
-  display: none; }
-  input[type="checkbox"]:checked + label:after, input[type="radio"]:checked + label:after {
+.jq-checkbox {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 2px solid #0054a4;
+  vertical-align: top;
+  top: 4px;
+  margin: auto; }
+  .jq-checkbox.checked {
+    background-image: url('../img/check.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #000; }
+
+.jq-radio {
+  display: block;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 2px solid #0054a4;
+  border-radius: 50%;
+  vertical-align: top;
+  top: 4px;
+  position: relative; }
+  .jq-radio:after {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0054a4;
+    top: 1px;
+    left: 1px; }
+  .jq-radio.checked:after {
     display: block; }
 
-.chckbox:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  box-sizing: border-box;
-  border: 2px solid #000;
-  top: 4px;
-  left: 0;
-  margin: auto; }
-.chckbox:after {
-  content: '';
-  width: 8px;
-  height: 7px;
-  background-image: url('../img/check.png');
-  position: absolute;
-  display: none;
-  top: 8px;
-  left: 3px;
-  color: #000; }
-.chckbox--blue:after, .chckbox--blue:before {
-  border-color: #0054a4;
-  color: #0054a4; }
-
-.radio:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  box-sizing: border-box;
-  border: 2px solid #000;
-  border-radius: 50%;
-  top: 4px;
-  left: 0;
-  margin: auto; }
-.radio:after {
-  content: '';
-  position: absolute;
-  display: none;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  color: #000;
-  top: 7px;
-  left: 3px; }
-.radio--blue:before {
-  border-color: #0054a4; }
-.radio--blue:after {
-  background-color: #0054a4; }
+.input-wrapper {
+  margin: 10px 0; }
 
 .btn {
   font-size: 16px;
