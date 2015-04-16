@@ -12,10 +12,16 @@
 
         & > a {
             text-decoration: underline;
+            transition: all .3s;
+
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 
     &-img {
+        max-width: 100%;
         margin-right: 15px;
         margin-bottom: 15px;
         margin-top: 8px;

@@ -28,7 +28,7 @@
         & > a {
             font-size: 13px;
             color: $white;
-            padding: 15px 12px;
+            padding: 15px 11.5px;
             text-decoration: none;
             display: inline-block;
             vertical-align: middle;
@@ -61,6 +61,7 @@
     &__item {
         padding: 10px 0;
         border-bottom: 1px dotted #6698c8;
+        position: relative;
 
         &:first-child { padding-top: 5px; }
         &:last-child {
@@ -73,6 +74,42 @@
             display: block;
             font-size: 13px;
             color: $white;
+            transition: all .3s;
+        }
+    }
+}
+
+.sub-sub-menu {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: $blue;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 165px;
+    padding: 18px;
+    box-sizing: border-box;
+    left: 145px;
+
+    &__item {
+        padding: 10px 0;
+        border-bottom: 1px dotted #6698c8;
+        position: relative;
+
+
+        &:first-child { padding-top: 5px; }
+        &:last-child {
+            padding-bottom: 5px;
+            border: none;
+        }
+
+        & > a {
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+            color: $white;
+            transition: all .3s;
         }
     }
 }

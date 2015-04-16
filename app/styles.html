@@ -2,10 +2,15 @@
 <html lang="ru">
 <head>
 
+    <meta charset="utf-8">
+    <meta name="robots" content="{if $page.noindex}none{else}all{/if}">
+    <meta name="description" content="{$page.description}">
+    <meta name="keywords" content="{$page.keywords}">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
     <link rel="stylesheet" href="css/styles.css">
 
-    <meta charset="UTF-8">
-    <title>Атмосфера</title>
+    <title>{$page.title}</title>
 
 </head>
 <body>
@@ -29,7 +34,6 @@
                     <!-- [+] .top-menu -->
                     <ul class="top-menu">
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             
                             <a href="">О компании</a>
@@ -37,108 +41,69 @@
                             <!-- [+] .sub-menu -->
                             <ul class="sub-menu">
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">О компании - чем занимается, кто руководитель</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">Планы компании на ближайший год</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">История компании</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">АТМ</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">Основные даты в истории</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">Фотографии завода, офиса</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
                             </ul>
                             <!-- [-] .sub-menu -->
 
                         </li>
-                        <!-- [-] .top-menu__item -->
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="">Контакты</a>
 
                             <!-- [+] .sub-menu -->
                             <ul class="sub-menu">
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">О компании - чем занимается, кто руководитель</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">Планы компании на ближайший год</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">История компании</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">АТМ</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">Основные даты в истории</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
-                                <!-- [+] .sub-menu__item -->
                                 <li class="sub-menu__item"> <a href="">Фотографии завода, офиса</a> </li>
-                                <!-- [-] .sub-menu__item -->
 
                             </ul>
                             <!-- [-] .sub-menu -->
 
                         </li>
-                        <!-- [-] .top-menu__item -->
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="">Фотоотчеты<br>меропрятий</a>
                         </li>
-                        <!-- [-] .top-menu__item -->
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="">Структуры компаний АТМ<br>Сотрудники</a>
                         </li>
-                        <!-- [-] .top-menu__item -->
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="">Документация</a>
                         </li>
-                        <!-- [-] .top-menu__item -->
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="">Вопросы/предложения<br>руководству компании</a>
                         </li>
-                        <!-- [-] .top-menu__item -->
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="">Вакансии</a>
                         </li>
-                        <!-- [-] .top-menu__item -->
 
-                        <!-- [+] .top-menu__item -->
                         <li class="top-menu__item">
                             <a href="" class="js-popup">Библиотека</a>
                         </li>
-                        <!-- [-] .top-menu__item -->
 
                     </ul>
                     <!-- [-] .top-menu -->
@@ -164,7 +129,7 @@
 
                 <!-- [+] .promo-block -->
                 <div class="promo-block">
-                    <p class="promo-text"><span>Атм</span>осфера</p>
+                    <span class="promo-text"> <img src="img/atm-logo.png" height="75" width="380" alt=""> </span>
                     <img class="promo-image" src="img/promo-img.jpg" height="253" width="977" alt="Атмосфера">
                 </div>
                 <!-- [-] .promo-block -->
@@ -191,25 +156,15 @@
                     <!-- [+] .side-menu -->
                     <ul class="side-menu">
 
-                        <!-- [+] .side-menu__item -->
                         <li class="side-menu__item"> <a href="">О компании</a> </li>
-                        <!-- [-] .side-menu__item -->
 
-                        <!-- [+] .side-menu__item -->
                         <li class="side-menu__item"> <a href="">Планы компании</a> </li>
-                        <!-- [-] .side-menu__item -->
 
-                        <!-- [+] .side-menu__item -->
                         <li class="side-menu__item"> <a href="">История компании</a> </li>
-                        <!-- [-] .side-menu__item -->
 
-                        <!-- [+] .side-menu__item -->
                         <li class="side-menu__item"> <a href="">Основные даты в истории</a> </li>
-                        <!-- [-] .side-menu__item -->
 
-                        <!-- [+] .side-menu__item -->
                         <li class="side-menu__item"> <a href="">Фотографии завода, офиса</a> </li>
-                        <!-- [-] .side-menu__item -->
 
                     </ul>
                     <!-- [-] .side-menu -->
@@ -223,24 +178,19 @@
                     
 
                     <!-- [+] .breadcrumbs -->
-                    <div class="breadcrumbs">
+                    <div class="breadcrumbs-list">
 
-                        <!-- [+] .breadcrumbs-list -->
-                        <ul class="breadcrumbs-list">
+                            <a href="" class="breadcrumbs-list__item">Главная</a>
 
-                            <!-- [+] .breadcrubms-list__item -->
-                            <li class="breadcrumbs-list__item"> <a href="">Главная</a> </li>
-                            <!-- [-] .breadcrubms-list__item -->
-
-                            <!-- [+] .breadcrubms-list__item -->
-                            <li class="breadcrumbs-list__item">» <a href="">Заголовок страницы</a> </li>
-                            <!-- [-] .breadcrubms-list__item -->
+                            <span class="breadcrumbs-list__separator">»</span>
+                            
+                            <a href="" class="breadcrumbs-list__item">Заголовок страницы</a>
 
                         </ul>
-                        <!-- [-] .breadcrumbs-list -->
+
 
                     </div>
-                    <!-- [-] .breadcrumbs -->
+                    <!-- [-] .breadcrumbs-list -->
 
 
                     <h1 class="h1">Заголовок страницы</h1>
@@ -270,6 +220,7 @@
                             <input type="text" class="data-input" placeholder="ФИО">
                             <input type="text" class="data-input" placeholder="Телефон">
                             <input type="text" class="data-input" placeholder="E-mail">
+                            <input type="text" class="data-input error">
 
                             <button type="submit" class="btn btn--blue">Отправить</button>
 
@@ -581,6 +532,10 @@
     <div class="popup">
     
         <span class="popup-text">Popup</span>
+
+        <span class="popup-close b-close">
+            <span>X</span>
+        </span>
     
     </div>
     <!-- [-] .popup -->
@@ -594,9 +549,9 @@
 
     <script type="text/javascript" src="js/main.js"></script>
 
+
+    <!-- B.M. id-1054 -->
     
 </body>
-
-<!-- B.M. id-1054 -->
 
 </html>

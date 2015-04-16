@@ -10,11 +10,13 @@
 .stat {
     opacity: .8;
     margin-top: 33px;
+    max-width: 30%;
 }
 
 .contacts {
     color: $white;
     margin: 23px 0;
+    max-width: 30%;
 
     .sup-phone-text {
         font-size: 14px;

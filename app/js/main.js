@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
     // Top Menu
-    $('.top-menu__item > a').on('click', function(e) {
+    $('.top-menu__item > a').on('mouseover', function(e) {
 
         var clickedItem = $(this);
         var siblingSubMenu = clickedItem.siblings('.sub-menu');
@@ -30,18 +30,20 @@ $(document).ready(function() {
 
     });
 
+    $(".sub-menu__item").on('mouseover', function() {
 
-    $(document).mouseup(function (e)
-    {
+        $(this).find('.sub-sub-menu').slideDown(300);
+    });
 
-        var animationSpeed = 300;
-        var subMenu = $(".sub-menu");
-
-        if (!subMenu.is(e.target) // if the target of the click isn't the container...
-            && subMenu.has(e.target).length === 0) // ... nor a descendant of the container
-
-        {   
-            subMenu.slideUp(animationSpeed, function() {
+    $(".top-menu__item").on("mouseleave", function() {
+        if ($(this).find(".sub-sub-menu").length) {
+            $(this).find(".sub-sub-menu").slideUp(300, function() {
+                $(this).closest('.sub-menu').slideUp(300, function() {
+                    $(this).siblings('.active').removeClass('active');
+                });
+            });
+        } else {
+            $(this).find(".sub-menu").slideUp(300, function() {
                 $(this).siblings('.active').removeClass('active');
             });
         }
@@ -91,6 +93,7 @@ $(document).ready(function() {
 
     }
 
+
     $(window).load(function() {
         var maxHeight = 0;
 
@@ -108,10 +111,6 @@ $(document).ready(function() {
             }
         });
 
-    });
-
-
-    $(window).load(function() {
         var maxHeight = 0;
 
         $('.future-content__item-inner .future-content__item-person:last-child').each(function() {
@@ -128,10 +127,6 @@ $(document).ready(function() {
             }
         });
 
-    });
-
-
-    $(window).load(function() {
         equalheight('.top-content__item-inner > div');
 
         setTimeout(function() {
@@ -139,10 +134,7 @@ $(document).ready(function() {
                 equalheight('.top-content__item-inner > div');
             });
         }, 0);
-    });
 
-
-    $(window).load(function() {
         equalheight('.news-content .news-content__item');
 
         setTimeout(function() {
